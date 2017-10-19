@@ -1,5 +1,5 @@
-FROM node:0.12-slim
-MAINTAINER "EEA: IDM2 A-Team" <eea-edw-a-team-alerts@googlegroups.com>
+FROM node:wheezy
+MAINTAINER "radiocuatoi" <radiocuatoi@gmail.com>
 
 # ------------------------------------------------------------------------------
 # Install dependencies
