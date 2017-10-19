@@ -1,4 +1,4 @@
-FROM node:wheezy
+FROM node:alpine
 MAINTAINER "radiocuatoi" <radiocuatoi@gmail.com>
 
 # ------------------------------------------------------------------------------
