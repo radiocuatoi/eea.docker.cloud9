@@ -8,8 +8,8 @@ RUN apt-get update \
     build-essential git pylint python3-dev python3-pip openssh-server \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* 
-RUN pip3 install virtualenv \
- && pip3 install chaperone \
+RUN pip-3.2 install virtualenv \
+ && pip-3.2 install chaperone \
  && mkdir /etc/chaperone.d /cloud9 /var/run/sshd
 
 # ------------------------------------------------------------------------------
