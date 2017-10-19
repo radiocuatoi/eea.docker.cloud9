@@ -5,9 +5,10 @@ MAINTAINER "radiocuatoi" <radiocuatoi@gmail.com>
 # Install dependencies
 RUN apt-get update \
  && apt-get install -y --no-install-recommends \
-    build-essential git pylint virtualenv python3-dev python3-pip openssh-server \
+    build-essential git pylint python3-dev python3-pip openssh-server \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
+ && pip3 install virtualenv \
  && pip3 install chaperone \
  && mkdir /etc/chaperone.d /cloud9 /var/run/sshd
 
